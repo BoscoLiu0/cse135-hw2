@@ -9,9 +9,8 @@ Under **Homework 2**, you will find links to all CGI programs, including:
 
 ---
 
-## 📂 CGI Program Links
-Direct access to CGI programs:  
-[http://ucsdcse135.site/cgi-bin/](http://ucsdcse135.site/cgi-bin/)
+## 📂 CGI Program
+all CGI files
 
 ---
 
