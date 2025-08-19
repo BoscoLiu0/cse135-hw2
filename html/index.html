@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSE 135 – Home</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root { --gray:#eee; --text:#111; --link:#0a58ca; }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);margin:32px}
+    h1{font-size:44px;margin:0 0 4px}
+    h2{margin:28px 0 10px}
+    .sub{font-size:24px;margin:0 0 24px}
+    .row{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+    .team{border:1px solid #ddd;background:#f7f7f7;padding:14px 16px;border-radius:6px}
+    .bar{background:var(--gray);padding:10px 12px;border-radius:6px;margin:6px 0 14px}
+    ul{margin:6px 0 0 18px}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .muted{color:#666}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:var(--gray);padding:10px 12px;border-radius:6px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    @media (max-width:900px){ .row{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr} }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X18Z537SSZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag("js", new Date());
+    gtag("config", "G-X18Z537SSZ");
+  </script>
+<script src="https://cdn.lgrckt-in.com/LogRocket.min.js" crossorigin="anonymous"></script>
+<script>window.LogRocket && window.LogRocket.init('vmhefk/ucsdcse135site');</script>
+</head>
+<body>
+  <h1>CSE 135</h1>
+  <div class="sub">Summer 2025</div>
+
+  <div class="row">
+    <main>
+      <!-- HW1 -->
+      <h2>Homework 1</h2>
+      <div class="bar">
+        <ul>
+          <li><a href="/hw1/hello.php">PHP (Hello)</a></li>
+          <li><a href="/hw1/report.html">Report (Static)</a></li>
+          <li><a href="https://collector.ucsdcse135.site" rel="noopener">Node</a></li>
+          <li><a href="https://reporting.ucsdcse135.site" rel="noopener">Analytics</a></li>
+        </ul>
+      </div>
+
+      <!-- HW2 -->
+      <h2>Homework 2</h2>
+      <section class="card grid-2">
+	<section>
+          <strong>Perl - CGI</strong>
+          <ul>
+            <li><a href="/cgi-bin/perl-hello-html-world.pl">Hello, Perl! (HTML)</a></li>
+            <li><a href="/cgi-bin/perl-hello-json-world.pl">Hello, Perl! (JSON)</a></li>
+            <li><a href="/cgi-bin/perl-env.pl">Environment Variables (manually)</a></li>
+            <li><a href="/cgi-bin/perl-env-pm.pl">Environment Variables (CGI.pm)</a></li>
+            <li><a href="/cgi-bin/perl-get-echo.pl">GET Echo</a></li>
+            <li><a href="/cgi-bin/perl-post-echo.pl">POST Echo</a></li>
+            <li><a href="/cgi-bin/perl-general-echo.pl">General Echo</a></li>
+            <li><a href="/perl-cgiform.html">Sessioning</a></li>
+          </ul>
+	</section>
+
+	<section>
+          <strong>C - CGI</strong>
+          <ul>
+            <li><a href="/cgi-bin/c-hello.cgi">Hello, C! (HTML)</a></li>
+            <li><a href="/cgi-bin/c-hello-json.cgi">Hello, C! (JSON)</a></li>
+            <li><a href="/cgi-bin/c-env.cgi">Environment Variables</a></li>
+            <li><a href="/cgi-bin/c-get-echo.cgi">GET Echo</a></li>
+            <li><a href="/cgi-bin/c-post-echo.cgi">POST Echo</a></li>
+            <li><a href="/cgi-bin/c-general-echo.cgi">General Echo</a></li>
+            <li><a href="/c-cgiform.html">Sessioning</a></li>
+          </ul>
+	</section>
+
+	<section>
+	  <strong>PHP - CGI</strong>
+	  <ul>
+	    <li><a href="/hw2/php/php-hello-html-world.php">Hello, PHP! (HTML)</a></li>
+  	    <li><a href="/hw2/php/php-hello-json-world.php">Hello, PHP! (JSON)</a></li>
+  	    <li><a href="/hw2/php/php-environment.php">Environment Variables</a></li>
+ 	    <li><a href="/hw2/php/php-get-echo.php">GET Echo</a></li>
+  	    <li><a href="/hw2/php/php-post-echo.php">POST Echo</a></li>
+  	    <li><a href="/hw2/php/php-general-request-echo.php">General Echo</a></li>
+	    <li><a href="/hw2/php/php-cgiform.html">Sessioning</a></li> 	
+	  </ul>
+	</section>
+	
+       <section>
+  	 <strong>Python - CGI</strong>
+  	 <ul>
+    	   <li><a href="/cgi-bin/py-hello-html-world.py">Hello, Python! (HTML)</a></li>
+    	   <li><a href="/cgi-bin/py-hello-json-world.py">Hello, Python! (JSON)</a></li>
+    	   <li><a href="/cgi-bin/py-env.py">Environment Variables</a></li>
+    	   <li><a href="/cgi-bin/py-get-echo.py?demo=1&lang=python">GET Echo</a></li>
+    	   <li><a href="/cgi-bin/py-post-echo.py">POST Echo</a></li>
+    	   <li><a href="/cgi-bin/py-general-echo.py">General Request Echo</a></li>
+    	   <li><a href="/hw2/py/py-cgiform.html">Sessioning</a></li>
+  	 </ul>
+       </section>
+      </section>
+
+      <!-- Analytics App -->
+      <h2>Analytics App</h2>
+      <div class="bar">TBD</div>
+
+      <p class="muted" style="margin-top:28px">Live @ <span id="ts"></span></p>
+    </main>
+
+    <aside class="team">
+      <h2 style="margin-top:4px">Team</h2>
+      <p class="muted" style="margin:8px 0 12px">A simple portal that links to all homework.</p>
+      <strong>Member</strong>
+      <ul style="margin-top:6px">
+        <li><a href="/members/boscoliu/">Yanhua Liu</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script>document.getElementById('ts').textContent = new Date().toString();</script>
+</body>
+</html>
+

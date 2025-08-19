@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSE 135 – Home</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root { --gray:#eee; --text:#111; --link:#0a58ca; }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);margin:32px}
+    h1{font-size:44px;margin:0 0 4px}
+    h2{margin:28px 0 10px}
+    .sub{font-size:24px;margin:0 0 24px}
+    .row{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+    .team{border:1px solid #ddd;background:#f7f7f7;padding:14px 16px;border-radius:6px}
+    .bar{background:var(--gray);padding:10px 12px;border-radius:6px;margin:6px 0 14px}
+    ul{margin:6px 0 0 18px}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .muted{color:#666}
+    @media (max-width:900px){ .row{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <h1>CSE 135</h1>
+  <div class="sub">Summer 2025</div>
+
+  <div class="row">
+    <main>
+      <h2>Homework 1</h2>
+      <div class="bar">
+        <ul>
+          <li><a href="/hw1/hello.php">PHP (Hello)</a></li>
+          <li><a href="/hw1/report.html">Report (Static)</a></li>
+          <li><a href="https://collector.ucsdcse135.site">Node</a></li>
+          <li><a href="https://reporting.ucsdcse135.site">Analytics</a></li>
+        </ul>
+      </div>
+
+      <h2>Homework 2</h2>
+      <div class="bar">TBD</div>
+
+      <h2>Analytics App</h2>
+      <div class="bar">TBD</div>
+
+      <p class="muted" style="margin-top:28px">
+        Live @ <span id="ts"></span>
+      </p>
+    </main>
+
+    <aside class="team">
+      <h2 style="margin-top:4px">Team</h2>
+     <p class="muted" style="margin:8px 0 12px">
+        A simple portal that links to all homework.
+      </p>
+      <strong>Member</strong>
+      <ul style="margin-top:6px">
+        <li><a href="/members/boscoliu/">Bosco Liu</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script>
+    document.getElementById('ts').textContent = new Date().toString();
+  </script>
+</body>
+</html>

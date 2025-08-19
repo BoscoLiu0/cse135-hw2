@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Perl CGI Form</title></head>
+<body>
+  <h1>Perl CGI Form</h1><hr/>
+  <form action="/cgi-bin/perl-sessions-1.pl" method="get">
+    <label>Name: <input name="username" /></label>
+    <button type="submit">Set Name (to Session)</button>
+  </form>
+  <p><a href="/cgi-bin/perl-sessions-1.pl">Session Page 1</a></p>
+  <p><a href="/cgi-bin/perl-sessions-2.pl">Session Page 2</a></p>
+  <form action="/cgi-bin/perl-destroy-session.pl" method="get" style="margin-top:20px">
+    <button type="submit">Destroy Session</button>
+  </form>
+   <p><a href="/index.html">Home</a></p>	
+</body>
+</html>
